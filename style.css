@@ -1,0 +1,89 @@
+body {
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    margin: 30px auto 0;
+    max-width: 1024px;
+}
+
+.control {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title {
+    flex: 0 1 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.photo {
+    flex: 0 1 25%;
+    margin: auto;
+    padding: 20px;
+}
+
+.description {
+    flex: 0 1 65%;
+}
+
+.description h4 {
+    margin-bottom: 0;
+}
+
+.description p {
+    margin-top: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+.link {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.hexagon {
+    cursor: pointer;
+    overflow: hidden;
+    visibility: hidden;
+    transform: rotate(120deg);
+}
+
+.hexagon-in1 {
+    height: 100%;
+    overflow: hidden;
+    transform: rotate(-60deg);
+    width: 100%;
+}
+
+.hexagon-in2 {
+    background-image: url(./photo.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    visibility: visible;
+    transform: rotate(-60deg);
+    transition: all 0.5s ease-out;
+    width: 100%;
+}
+
+.hexagon-in2:hover {
+    background-image: url(./hover.jpg);
+}
+
+.hexagon2 {
+    height: 400px;
+    margin: -80px 0 0 20px;
+    width: 200px;
+}
